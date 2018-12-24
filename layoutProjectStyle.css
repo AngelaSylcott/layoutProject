@@ -39,15 +39,34 @@
 }
 
 .blue {
+    display: flex;
+}
+
+#grid {
     display: grid;
+    grid-template-rows: 250px 250px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    background-color: gray;
+    grid-gap: 15px;
+    justify-content: space-around;    
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3b3b;
+    margin: 20px;
 }
 
 img {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+}
+
+.yellow {
+    justify-content: center;
+    height: 20px;
 }
 
 .zone:hover {
